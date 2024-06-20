@@ -2,7 +2,7 @@
 
 ## Tasklist
 
-- [ ] Branch readme (Vanessa)
+- [x] Branch readme (Vanessa)
 - [ ] Branch maven-detail 
 - [ ] Branch bug_hunt
 - [ ] Branch drink
