@@ -2,10 +2,8 @@
 
 ## Tasklist
 
-- [x] Repository erstellen (Sarah)
-- [ ] Maven Projekt Branch erstellen (Sarah)
 - [ ] Branch readme (Vanessa)
-- [ ] Branch maven-detail
+- [ ] Branch maven-detail 
 - [ ] Branch bug_hunt
 - [ ] Branch drink
 - [ ] Branch queue
@@ -19,10 +17,12 @@
 
 ## Installation
 
+Project has to be opened in an IDE, select Main and Run
 
 
 ## Usage
 
+Different Methods
 
 ### Author
 Vanessa Bierbacher & Sarah Berger
