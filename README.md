@@ -7,7 +7,7 @@
 - [x] Branch bug_hunt
 - [x] Branch drink
 - [x] Branch queue
-- [ ] Branch javadoc
+- [x] Branch javadoc
 - [x] Branch Tests
 - [ ] Branch maven_site
 
