@@ -12,12 +12,17 @@ public class DrinkQueue implements IQueue{
 
     @Override
     public boolean offer(String obj) {
-        return false;
+        return drinkQueue.add(obj);
     }
 
     @Override
     public String poll() {
-        return "";
+        if (drinkQueue.isEmpty()) {
+            return null;
+        }
+        else{
+            return drinkQueue.removeFirst();
+        }
     }
 
     @Override
