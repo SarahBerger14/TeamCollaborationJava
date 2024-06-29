@@ -10,60 +10,53 @@ import java.util.NoSuchElementException;
 
 public class StringQueue implements IQueue {
 
-  private List<String> elements = new ArrayList<String>();
-  private int maxSize = 5;
+  private final List<String> elements = new ArrayList<String>();
+  private final int maxSize;
 
-  public StringQueue(int maxsize) {
-    maxSize = maxSize;
+  public StringQueue(int maxSize) {
+    this.maxSize = maxSize;
   }
 
   @Override
   public boolean offer(String obj) {
-    if (elements.size() != maxSize)
+    if (elements.size() < maxSize)
       elements.add(obj);
-    else
+    else {
       return false;
-
+    }
     return true;
   }
 
   @Override
   public String poll() {
-    String element = peek();
-
-    if (elements.size() == 0) {
-      elements.remove(0);
+    if (!elements.isEmpty()) {
+      return elements.removeFirst();
+    } else {
+      return null;
     }
-
-    return element;
   }
 
   @Override
   public String remove() {
     String element = poll();
-    element = "";
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
-
     return element;
   }
 
   @Override
   public String peek() {
-    String element;
-    if (elements.size() > 0)
-      element = elements.get(0);
-    else
-      element = null;
-
-    return element;
-  }
+    if (!elements.isEmpty())
+      return elements.get(0);
+    else{
+    return null;
+  }}
 
   @Override
   public String element() {
     String element = peek();
     if (element == null)
-      throw new NoSuchElementException("there's no element any more");
+      throw new NoSuchElementException("There's no element any more");
 
     return element;
   }

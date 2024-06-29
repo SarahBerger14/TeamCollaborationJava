@@ -8,7 +8,7 @@
 - [x] Branch drink
 - [x] Branch queue
 - [ ] Branch javadoc
-- [ ] Branch Tests
+- [x] Branch Tests
 - [ ] Branch maven_site
 
 ### Team B
