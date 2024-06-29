@@ -1,18 +1,9 @@
 package at.campus02.bsd;
 
-// fastly written (not really nice) comments you should adapt
+// IQueue
 public interface IQueue {
-  /** 
-   * I am a really bad comment
-   * 
-   * fasdfadsffdsadsf
-   * 
-   * fdsasdfadsf
-   * 
-   *  add object to queue, true if okay 
-   * 
-   * i fell asleep on my keyboard...
-   * 
+  /**
+   *  add object to queue, true if okay
    * */ 
   public abstract boolean offer(String obj);
 
