@@ -8,8 +8,8 @@
 - [x] Branch drink
 - [x] Branch queue
 - [ ] Branch javadoc
-- [ ] Branch Tests
-- [ ] Branch maven_site
+- [x] Branch Tests
+- [x] Branch maven_site
 
 ### Team B
 - Vanessa Bierbacher
