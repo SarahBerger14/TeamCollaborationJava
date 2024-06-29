@@ -20,6 +20,20 @@
                 <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
             </properties>
         </developer>
+        <developer>
+        <id>vanessabierbacher</id>
+        <name>Vanessa Bierbacher</name>
+        <email>s52701@edu.campus02.at</email>
+        <organization>FH Campus02</organization>
+        <organizationUrl>https://www.campus02.at</organizationUrl>
+        <roles>
+            <role>Student</role>
+        </roles>
+        <timezone>Europe/Vienna</timezone>
+        <properties>
+            <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
+        </properties>
+    </developer>
     </developers>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

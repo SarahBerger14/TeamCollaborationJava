@@ -1,17 +1,26 @@
 package at.campus02.bsd;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * A test for the cocktail class.
+ */
 public class CocktailTest {
+    /**
+     * The cocktail to test.
+     */
     Cocktail cocktail;
+
+    /**
+     * Sets up the test environment.
+     *
+     * @throws Exception if an error occurs
+     */
     @BeforeEach
     public void setUp() throws Exception {
         List<Liquid> liquids = new ArrayList<Liquid>();
@@ -20,24 +29,32 @@ public class CocktailTest {
         cocktail = new Cocktail("Sex on the Beach", liquids);
     }
 
+    /**
+     * Tests the getVolume() method.
+     */
     @DisplayName("Testing getVolume() Method")
     @Test
     void testGetVolume() {
         assertEquals(60, cocktail.getVolume());
     }
 
+    /**
+     * Tests the getAlcoholPercent() method.
+     */
     @DisplayName("Testing getAlcoholPercent() Method")
     @Test
     void testGetAlcoholPercent() {
         assertEquals(((double) 4 /60*100), cocktail.getAlcoholPercent());
     }
 
+    /**
+     * Tests the isAlcoholic() method.
+     */
     @DisplayName("Testing isAlcoholic() Method")
     @Test
     void testIsAlcoholic() {
         assertTrue(cocktail.isAlcoholic());
     }
-
 @DisplayName("Testing getName() Method")
     @Test
 
@@ -50,4 +67,6 @@ public class CocktailTest {
         cocktail.setName("Mojito");
         assertEquals("Mojito", cocktail.getName());
     }
+}
+=======
 }

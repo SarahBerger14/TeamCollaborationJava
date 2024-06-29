@@ -1,26 +1,47 @@
 package at.campus02.bsd;
 
-// IQueue
+import java.util.NoSuchElementException;
+
+/**
+ * Represents an interface queue for drinks.
+ */
 public interface IQueue {
+
   /**
-   *  add object to queue, true if okay
-   * */ 
+   * Adds a drink to the queue.
+   *
+   * @param obj the drink to add
+   * @return true if the drink was added, false otherwise
+   */
   public abstract boolean offer(String obj);
 
-  //returns + del 1st element; null if nothing in there
-   //
+  /**
+   * Removes and returns the first drink from the queue.
+   *
+   * @return the removed drink, or null if the queue is empty
+   */
   public abstract String poll();
 
-  /* 
-  same as poll, if there is nothing in there error NoSuchElementException
+  /**
+   * Removes and returns the first drink from the queue.
+   *
+   * @return the removed drink
+   * @throws NoSuchElementException if the queue is empty
    */
   public abstract String remove();
 
-  // 1st element without dlete, otherwise null
-   
+  /**
+   * Returns the first drink from the queue without removing it.
+   *
+   * @return the first drink, or null if the queue is empty
+   */
   public abstract String peek();
 
-  // element is to peek what remove is to poll
-  
+  /**
+   * Returns the first drink from the queue without removing it.
+   *
+   * @return the first drink
+   * @throws NoSuchElementException if the queue is empty
+   */
   public abstract String element();
 }
