@@ -4,7 +4,7 @@
 
 - [x] Branch readme (Vanessa)
 - [x] Branch maven-detail 
-- [ ] Branch bug_hunt
+- [x] Branch bug_hunt
 - [ ] Branch drink
 - [ ] Branch queue
 - [ ] Branch javadoc
