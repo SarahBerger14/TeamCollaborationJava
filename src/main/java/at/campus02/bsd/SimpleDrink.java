@@ -1,16 +1,17 @@
 package at.campus02.bsd;
+
 /**
- * Class represents a simple drink liquid which can be used in
- * drinks
+ * Class represents a simple drink which uses only one liquid
  */
 public class SimpleDrink extends Drink{
+
     /**
-     * uses only one liquid
+     * The only liquid in the drink
      */
     protected Liquid l;
+
     /**
-     * Creates a SimpleDrink object with given age and
-     * liquid
+     * Creates a SimpleDrink object with given name and liquid
      *
      * @param name name of drink
      * @param l only liquid in drink
@@ -21,9 +22,9 @@ public class SimpleDrink extends Drink{
     }
 
     /**
-     * Returns volume of liquid l
+     * Returns volume of the liquid
      *
-     * @return the volume of drink in litre
+     * @return the volume of drink
      */
     @Override
     public double getVolume() {
@@ -31,18 +32,19 @@ public class SimpleDrink extends Drink{
     }
 
     /**
-     * Returns alcohol volume percent of liquid l
+     * Returns alcohol percentage of the liquid
      *
-     * @return alcohol volume percent
+     * @return alcohol percent
      */
     @Override
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
     }
+
     /**
-     * Gives information if drink is alcoholic or not
+     * Gives information if the drink is alcoholic or not
      *
-     * @return true when alcoholic liquids are present, otherwise false
+     * @return true when the used liquid is alcoholic, otherwise false
      */
     @Override
     public boolean isAlcoholic() {

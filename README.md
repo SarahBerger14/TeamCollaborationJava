@@ -7,9 +7,11 @@
 - [x] Branch bug_hunt
 - [x] Branch drink
 - [x] Branch queue
-- [ ] Branch javadoc
+- [x] Branch javadoc
 - [x] Branch Tests
 - [x] Branch maven_site
+
+
 
 ### Team B
 - Vanessa Bierbacher
