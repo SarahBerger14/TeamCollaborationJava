@@ -18,7 +18,6 @@ public class CocktailTest {
         liquids.add(new Liquid("Vodka", 10,40));
         liquids.add(new Liquid("Orange juice", 50,0));
         cocktail = new Cocktail("Sex on the Beach", liquids);
-
     }
 
     @DisplayName("Testing getVolume() Method")
@@ -39,7 +38,16 @@ public class CocktailTest {
         assertTrue(cocktail.isAlcoholic());
     }
 
+@DisplayName("Testing getName() Method")
+    @Test
 
+    void testGetName() {
+        assertEquals("Sex on the Beach", cocktail.getName());}
 
-
+    @DisplayName("Testing setName() Method")
+    @Test
+    void testSetName() {
+        cocktail.setName("Mojito");
+        assertEquals("Mojito", cocktail.getName());
+    }
 }
