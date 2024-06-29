@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * A test for the cocktail class.
+ * Test for cocktails
  */
 public class CocktailTest {
     /**
@@ -18,8 +18,6 @@ public class CocktailTest {
 
     /**
      * Sets up the test environment.
-     *
-     * @throws Exception if an error occurs
      */
     @BeforeEach
     public void setUp() throws Exception {
@@ -54,5 +52,24 @@ public class CocktailTest {
     @Test
     void testIsAlcoholic() {
         assertTrue(cocktail.isAlcoholic());
+    }
+
+    /**
+     * Tests the getName() method.
+     */
+    @DisplayName("Testing getName() Method")
+    @Test
+    void testGetName() {
+        assertEquals("Sex on the Beach", cocktail.getName());
+    }
+
+    /**
+     * Tests the setName() method.
+     */
+    @DisplayName("Testing setName() Method")
+    @Test
+    void testSetName() {
+        cocktail.setName("Mojito");
+        assertEquals("Mojito", cocktail.getName());
     }
 }
