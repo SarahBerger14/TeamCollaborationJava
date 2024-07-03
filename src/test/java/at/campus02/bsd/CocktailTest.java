@@ -68,5 +68,3 @@ public class CocktailTest {
         assertEquals("Mojito", cocktail.getName());
     }
 }
-=======
-}

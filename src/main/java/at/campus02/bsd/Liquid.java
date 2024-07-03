@@ -3,7 +3,7 @@ package at.campus02.bsd;
 /**
  * Represents a liquid, which is a drink ingredient.
  */
-public class Liquid {
+public class Liquid{
 
     /**
      * The name of the liquid.

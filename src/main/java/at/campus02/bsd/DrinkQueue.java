@@ -5,18 +5,18 @@ import java.util.NoSuchElementException;
 /**
  * Represents a queue for drinks.
  */
-public class DrinkQueue implements IQueue {
+public class DrinkQueue{
 
     /**
      * The list of drinks.
      */
-    private final ArrayList<String> drinkQueue;
+    private final ArrayList<Drink> drinkQueue;
 
     /**
      * Creates a new drink list.
      */
     public DrinkQueue() {
-        drinkQueue = new ArrayList<String>();
+        drinkQueue = new ArrayList<Drink>();
     }
 
     /**
@@ -25,8 +25,8 @@ public class DrinkQueue implements IQueue {
      * @param obj the drink to add
      * @return true if the drink was added, false otherwise
      */
-    @Override
-    public boolean offer(String obj) {
+
+    public boolean offer(Drink obj) {
         return drinkQueue.add(obj);
     }
 
@@ -35,8 +35,8 @@ public class DrinkQueue implements IQueue {
      *
      * @return the removed drink, or null if the queue is empty
      */
-    @Override
-    public String poll() {
+
+    public Drink poll() {
         if (drinkQueue.isEmpty()) {
             return null;
         }
@@ -51,8 +51,8 @@ public class DrinkQueue implements IQueue {
      * @return the removed drink
      * @throws NoSuchElementException if the queue is empty
      */
-    @Override
-    public String remove() {
+
+    public Drink remove() {
         if (drinkQueue.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         } else {
@@ -65,8 +65,8 @@ public class DrinkQueue implements IQueue {
      *
      * @return the first drink, or null if the queue is empty
      */
-    @Override
-    public String peek() {
+
+    public Drink peek() {
         if (drinkQueue.isEmpty()) {
             return null;
         } else {
@@ -80,8 +80,8 @@ public class DrinkQueue implements IQueue {
      * @return the first drink
      * @throws NoSuchElementException if the queue is empty
      */
-    @Override
-    public String element() {
+
+    public Drink element() {
         if (drinkQueue.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         } else {
