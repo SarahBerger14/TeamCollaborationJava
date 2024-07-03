@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 
-public class DrinkQueue implements IQueue {
+public class DrinkQueue{
 
 
-    private ArrayList<String> drinkQueue;
+    private ArrayList<Drink> drinkQueue;
 
     public DrinkQueue() {
-        drinkQueue = new ArrayList<String>();
+        drinkQueue = new ArrayList<Drink>();
     }
 
     @Override
-    public boolean offer(String obj) {
+    public boolean offer(Drink obj) {
         return drinkQueue.add(obj);
     }
 
     @Override
-    public String poll() {
+    public Drink poll() {
         if (drinkQueue.isEmpty()) {
             return null;
         }
@@ -29,7 +29,7 @@ public class DrinkQueue implements IQueue {
     }
 
     @Override
-    public String remove() {
+    public Drink remove() {
         if (drinkQueue.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         } else {
@@ -38,7 +38,7 @@ public class DrinkQueue implements IQueue {
     }
 
     @Override
-    public String peek() {
+    public Drink peek() {
         if (drinkQueue.isEmpty()) {
             return null;
         } else {
@@ -47,7 +47,7 @@ public class DrinkQueue implements IQueue {
     }
 
     @Override
-    public String element() {
+    public Drink element() {
         if (drinkQueue.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         } else {
